@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const mysql = require('mysql2');
 
-// Connexion à la base de donnée
+// Connexion avec la base de donnée
 const connection = mysql.createConnection({
     host: 'hostname',
     user: 'username',
