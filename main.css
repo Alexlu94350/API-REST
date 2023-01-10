@@ -1,1 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Ephesis&display=swap');
+/* font-family: 'Birthstone', cursive;
+font-family: 'Ephesis', cursive;*/
+* {
+	margin: 0px;
+}
 
+/* COLOR
+GREY #636570#   rgb(99,101,112)
+Skyblue #8ab4f8#9 rgb(138,180,248)
+lightcoralhsl #f28b82#f98 rgb(242,139,130)
+darkseagreenhsl #75ba75#7c7 rgb(117,186,117)
+*/
+
+
+.text {
+
+font-family: 'Ephesis', cursive;
+background-color: orange;
+color: rgb(253,2,2);
+border: 5px GREEN solid ;
+border-radius: 5px;
+padding: 10px;
+margin-top: 10%;
+float: left;
+}
+
+
+}
+
+
+.OK {
+	font-family: 'Birthstone', cursive;
+	text-shadow: 5px 5px 5px rgba(117,186,117, 0.6);
+	text-align: center;
+	color: rgb(138,180,248);
+	
+}
+
+.container {
+	width: 75%;
+	margin: auto;
+}
+
+nav {
+	height:70px;
+	background-color: blue;
+	position: fixed;
+	width: 100%	 ;
+}
+
+
+
+nav ul {
+	float: right;
+	list-style: none;
+
+
+}
+div img { 
+	height: 50px;
+	float: left;
+
+}
+
+nav ul li {
+	float: left	;
+	margin: 10px;
+
+}
+
+a {
+	text-decoration: none;
+}
+nav div ul p {
+	margin-top: auto;
+
+	left: 50%;
+	background-color: yellow;
+	position: fixed;
+	font-size: 30px;
+	padding: 18px;
+}
