@@ -1,20 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <script>
-    function getData() {
-      var xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-          document.getElementById("users").innerHTML = this.responseText;
-        }
-      };
-      xhttp.open("GET", "get_users.php", true);
-      xhttp.send();
-    }
-  </script>
-</head>
-<body onload="getData()">
-  <table id="users"></table>
-</body>
-</html>
+// Création d'un titre pour la page
+var title = document.createElement("h1");
+title.innerHTML = "Mon titre";
+document.body.appendChild(title);
+
+// Ajout d'un paragraphe de texte
+var text = document.createElement("p");
+text.innerHTML = "Mon texte";
+document.body.appendChild(text);
+
+// Ajout d'un lien
+var link = document.createElement("a");
+link.href = "https://www.google.com";
+link.innerHTML = "Google";
+document.body.appendChild(link);
