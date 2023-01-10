@@ -1,6 +1,6 @@
 // Création d'un titre pour la page
 var title = document.createElement("h1");
-title.innerHTML = "Mon titre";
+title.innerHTML = "Le petit coin";
 document.body.appendChild(title);
 
 // Ajout d'un paragraphe de texte
