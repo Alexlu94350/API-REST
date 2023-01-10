@@ -7,7 +7,29 @@ const connection = mysql.createConnection({
   password: 'password',
   database: 'app'
 });
+// Création de la base de données
+connection.query(`CREATE DATABASE app`, (err) => {
+    if (err) {
+        console.error(err);
+        return;
+    }
+    console.log('Base de données créée avec succès.');
+});
 
+// Création de la table 'users'
+connection.query(`
+    CREATE TABLE app.users (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        username VARCHAR(255) NOT NULL,
+        email VARCHAR(255) NOT NULL
+    )`,
+    (err) => {
+        if (err) {
+            console.error(err);
+            return;
+        }
+        console.log('Table des utilisateurs créée avec succès.');
+    }
 // Connexion à la base de données
 connection.connect((err) => {
   if (err) {
